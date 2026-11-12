@@ -1,5 +1,5 @@
 import socket
-
+from principale import algoritmo_compressione
 # Crea un socket TCP (SOCK_STREAM) che usa indirizzi IPv4 (AF_INET).
 # Il costrutto with chiude automaticamente il socket al termine del blocco.
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
