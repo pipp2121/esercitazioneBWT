@@ -17,6 +17,8 @@ for i in SD[1:]: #inizia da una posizione dopo per fare un ciclo in meno e termi
     SD2=SD+primo_carattere
     SD=SD2
     print(SD2)
-    listaSD2.append(SD2)
+    listaSD2.append(SD2)#salva la parola alla fine della lista 
+print(listaSD2)
 
+listaSD2.sort()#riordina la lista in ordine alfabetico 
 print(listaSD2)
