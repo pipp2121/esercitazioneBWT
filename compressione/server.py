@@ -27,10 +27,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
 
         # Riceve fino a 1024 byte dal client.
         # decode() converte i byte ricevuti in una stringa.
-        messaggio = conn.recv(1024)
-        print("Messaggio ricevuto:", messaggio.decode())
+        messaggio = conn.recv(1024).decode()
+        print("Messaggio ricevuto:", messaggio)
+        s=algoritmo_compressione(messaggio)
 
         # Rimanda al client gli stessi byte ricevuti (echo).
         # sendall() garantisce l'invio di tutti i byte del messaggio,
         # mentre send() potrebbe inviarne solo una parte.
-        conn.sendall(messaggio)
+        conn.sendall(s.encode())

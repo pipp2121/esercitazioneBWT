@@ -22,3 +22,4 @@ def algoritmo_compressione(s):
     for i in listaSD2:
         SD3=SD3+i[-1]# la i prende la posizione della parola nella lista e il numero dentro le quadre prende l'ultimo carattere della prola nella strigna
     print(SD3)
+    return SD3
