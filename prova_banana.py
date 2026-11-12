@@ -22,3 +22,7 @@ print(listaSD2)
 
 listaSD2.sort()#riordina la lista in ordine alfabetico 
 print(listaSD2)
+
+SD3=""
+for i in SD2:
+    ultimo_elemento=SD2[-1] #prende l'ultimo elemento di una stringa
