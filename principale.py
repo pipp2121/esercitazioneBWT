@@ -9,6 +9,7 @@ dollaro="$"
 print(s+dollaro)
 SD=s+dollaro
 print(SD)
+listaSD2=[SD]
 for i in SD[1:]: #inizia da una posizione dopo per fare un ciclo in meno e terminare correttmante 
     primo_carattere=SD[0]
     SD2=SD[1:]# 1: serve per togliere il primo elemento
@@ -16,4 +17,6 @@ for i in SD[1:]: #inizia da una posizione dopo per fare un ciclo in meno e termi
     SD2=SD+primo_carattere
     SD=SD2
     print(SD2)
+    listaSD2.append(SD2)
 
+print(listaSD2)
