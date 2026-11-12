@@ -23,10 +23,10 @@ dollaro="$"
 print(s+dollaro)
 SD=s+dollaro
 print(SD)
-
 for i in SD:
     primo_carattere=SD[0]
     SD2=SD[1:]# 1: serve per togliere il primo elemento
-    SD=SD2
+    SD=SD2#serve per aggiornare la stringa e rendere uguale a SD2
     SD2=SD+primo_carattere
+    SD=SD2
     print(SD2)
