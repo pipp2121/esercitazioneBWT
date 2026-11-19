@@ -1,5 +1,4 @@
 def algoritmo_compressione(s):    
-    s=str(input("inserisci la parola: "))
     dollaro="$"
     print(s+dollaro)
     SD=s+dollaro
